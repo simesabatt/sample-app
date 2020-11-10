@@ -55,17 +55,72 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
+  padding-left: 9px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-style: italic;
+  color: #fff;
 }
 
 #logo:hover {
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
+}
+
+.navbar {
+  background-color: #008080;
+  border: 0px;
+}
+
+.header-list {
+  float: right;
+  padding-left: 9px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header-list:hover {
+  color: #ddd;
+  text-decoration: none;  
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.nav > li > a:hover {
+  background-color: #008080;
+}
+
+li .dropdown-header {
+  background-color: rgba(200,200,200,0.5);
+  font-weight: bold;
+}
+.nav .open {
+  background-color: #008080;
+  color: #000;
+  border-color: #337ab7;
+  font-weight: bold;
+}
+
+#dropdown-title {
+  background-color: #008080;
+  color: #fff;
+}
+
+#dropdown-title:hover {
+  background-color: #008080;
+  color: #ddd;
 }
 
 /* デバッグウインドウ */
@@ -79,6 +134,8 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
+
+
 
 /* エラーメッセージ */
 
