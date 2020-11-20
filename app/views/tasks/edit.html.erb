@@ -1,0 +1,17 @@
+<% provide(:title, 'Edit Task') %>
+
+<div class="main posts-show">
+   <div class="container">
+      <div class="posts-show-item">
+        <h1>タスク編集ページ</h1>
+        <%= form_tag user_task_path do %>
+          <div class="form">
+            <div class="form-body">
+              <textarea><%= @task.task_title %></textarea>
+              <input type="submit" value="保存">
+            </div>
+        <% end %>
+        </div>
+      </div>
+   </div>
+</div>

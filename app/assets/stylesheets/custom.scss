@@ -81,6 +81,7 @@ p {
   padding-left: 9px;
   font-weight: bold;
   font-size: 14px;
+  color: #fff !important;
 }
 
 .header-list:hover {
@@ -89,7 +90,6 @@ p {
 }
 
 a {
-  color: #fff;
   font-weight: bold;
 }
 
@@ -100,6 +100,10 @@ a:hover {
 
 .nav > li > a:hover {
   background-color: #008080;
+}
+
+.nav > li > a {
+  color: "fff";
 }
 
 li .dropdown-header {
@@ -122,6 +126,7 @@ li .dropdown-header {
   background-color: #008080;
   color: #ddd;
 }
+
 
 /* デバッグウインドウ */
 
@@ -152,4 +157,24 @@ li .dropdown-header {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* posts/new */
+
+.posts-new textarea {
+  font-size: 20px;
+  padding: 10px;
+  min-height: 140px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
+}
+
+.posts-new textarea::-webkit-input-placeholder {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.users-form input {
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
