@@ -7,10 +7,10 @@
     <%= form_with(model: @task, url: user_tasks_path(@user), local:true) do |f| %>
     
       <%= f.label :task_title, "名称", class: "label-form" %>
-      <%= f.text_field :task_title, class: "form-control" %>
+        <%= f.text_field :task_title, class: "form-control" %>
       
       <%= f.label :task_detail, "詳細", class: "label-form" %>
-      <%= f.text_area :task_detail, rows: 5, class: "form-control" %>
+        <%= f.text_area :task_detail, rows: 5, class: "form-control" %>
       
       <%= f.hidden_field :user_id, value: @user %>
       
