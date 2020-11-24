@@ -4,7 +4,9 @@
   <div class="col-md-8 col-md-offset-2">
     <h1>タスク編集ページ</h1>
       <%= form_with(model: @task, url: user_task_path(@user, @task), local: true, method: :patch) do |f| %>
-        
+
+        <%= render 'shared/error_messages', model: f.object %>
+
         <%= f.label :task_title, "名称", class: "label-form" %>
           <%= f.text_field :task_title, class: "form-control" %>
         

@@ -6,6 +6,8 @@
   <div class="col-md-8 col-md-offset-2">
     <%= form_with(model: @task, url: user_tasks_path(@user), local:true) do |f| %>
     
+      <%= render 'shared/error_messages', model: f.object %>
+
       <%= f.label :task_title, "名称", class: "label-form" %>
         <%= f.text_field :task_title, class: "form-control" %>
       
