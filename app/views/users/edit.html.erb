@@ -1,0 +1,26 @@
+<% provide(:title, @user.name) %>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <h1>ユーザー編集ページ</h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+
+        <%= render 'shared/error_messages', model: f.object %>
+
+        <%= f.label :name, "名前", class: "label-form" %>
+          <%= f.text_field :name, class: "form-control" %>
+        
+        <%= f.label :email, "メールアドレス", class: "label-form" %>
+          <%= f.email_field :email, class: "form-control" %>
+          
+        <%= f.label :password, "パスワード", class: "label-form" %>
+          <%= f.password_field :password, class: "form-control" %>
+          
+        <%= f.label :password_confirmation, "パスワード再入力", class: "label-control" %>
+          <%= f.password_field :password_confirmation, class: "form-control" %>
+        
+        <%= f.submit "更新", class: "btn btn-primary btn-form form-control" %>
+
+      <% end %>
+  </div>
+</div>

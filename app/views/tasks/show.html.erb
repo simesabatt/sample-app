@@ -16,7 +16,7 @@
         </tr>
         <tr>
           <th class="active"><%= Task.human_attribute_name :詳細 %></th>
-          <td><%= @task.task_detail %></td>
+          <td><%= auto_link(safe_join(@task.task_detail.split("\n"), tag(:br))) %></td>
         </tr>
         <tr>
           <th class="active"><%= Task.human_attribute_name :作成日 %></th>
